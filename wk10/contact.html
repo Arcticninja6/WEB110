@@ -1,0 +1,73 @@
+<!--John Lord 4/16/2026-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>JCCC Contact Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <img src="logo-1.jpg">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! Please fill out the form below</p>
+            </header>
+
+            <main>
+                <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" maxlength="30" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" maxlength="30" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Your Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+                </div>
+
+                <div class="form-group">
+                    <label>How would you prefer we contact you?</label>
+                    <div class="contact-options">
+                        <div class="radio-option">
+                            <input type="radio" id="contactEmail" name="contactPrefrence" value="email" required>
+                            <label for="contactEmail">Email</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="contactPhone" name="contactPrefrence" value="Phone" >
+                            <label for="contactPhone">Phone</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="contactText" name="contactPrefrence" value="text" >
+                            <label for="contactText">Text</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="noPreference" name="contactPrefrence" value="no_prefernce" >
+                            <label for="noPreference">No Prefrence</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+                </form>
+            </main>
+             <footer>
+                <p>&copy; John Lord. All rights reserved</p>
+             </footer>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+/*John Lord 4/16/2026*/
+
+body{
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: darkblue;
+}
+
+.container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000;
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+header{
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 10px #000;
+    margin-bottom: 20px;
+}
+
+header img{
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h2{
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.form-group{
+    display: grid;
+    gap: 8px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: rgb(58, 57, 57);
+}
+
+/*Inputs*/
+input,select{
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+.contact-options{
+    display: grid;
+    gap: 10px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="radio"]{
+    margin: 0;
+    padding: 0;
+}
+
+button[type="submit"]{
+    background-color: rgb(29, 178, 163);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover{
+    transition: transform 0.3s ease;
+     transform: scale(1.05)
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+/*valid fields after user input*/
+input:user-valid,
+select:user-valid{
+    border-color: #04AA6D;
+    background-color: lightgray;
+}
+
+input:user-invalid,
+select:user-invalid {
+  background-color: #d2988d;
+  border-color: #e63946;
+  font-weight: bold;
+}
+
+input[type="text"]:focus,
+input[type="Date"]:focus,
+select:focus{
+    background-color: aliceblue;
+}
