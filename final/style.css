@@ -1,0 +1,191 @@
+/*John Lord 2/26/2026*/
+/*Midterm*/
+/*general styles*/
+
+body{
+    background: #0c4dcf;
+background: linear-gradient(180deg, rgba(12, 77, 207, 1) 0%, rgba(5, 152, 181, 1) 39%, rgba(245, 224, 122, 1) 82%);
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #41515e;
+    line-height: 1.6;
+    background-color: #f0f8ff;
+    height: 100%;
+}
+
+header{
+    background-color: gainsboro;
+    padding: .5rem .5rem;
+    margin-bottom: .5rem;
+    text-align: center;
+    color: black;
+    font-size: x-large;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+main{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section{
+    background-color: #E2CA76;
+    margin-bottom: 1rem;
+    padding: .5rem;
+}
+
+.list{
+    list-style-type: disc;   /* bullet style */
+    padding-left: 20px;      /* indentation */
+    margin: 10px 0;
+    background-color: #E2CA76;
+    color: #111111;
+    display: block;
+}
+
+.dis{
+    color: rgb(183, 6, 6);
+}
+
+h2{
+    color: whitesmoke;
+    margin-bottom: .5rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.inbh{
+  color: black;
+    margin-bottom: .5rem;   
+}
+
+h3{
+   color: black;
+    margin-bottom: .5rem; 
+
+}
+
+h4{
+   color: black;
+    margin-bottom: .5rem; 
+}
+p{
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    color: black;
+}
+
+img{
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+footer{
+    background-color:#E2CA76 ;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: .5rem;
+}
+
+ol{
+    color: #111111;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: rgb(244, 207, 96);
+  color: #111111;
+  padding: 20px;
+  border-radius: 10px;
+}
+input,
+select {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}
+
+input:user-valid,
+select:user-valid {
+  background-color: lightgreen;
+  border-color: green;
+}
+
+input:user-invalid,
+select:user-invalid {
+  background-color: #d2988d; /* light red */
+  border-color: #e63946;
+  font-weight: bold;
+}
+
+.radio-group {
+  border: 1px solid #34c0c4;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.radio-group label {
+  display: block;
+  margin: 5px 0;
+}
+
+input[type="submit"] {
+  background-color: darkblue;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: auto
+}
+
+input[type="submit"]:hover { 
+  background-color: white;
+  color: darkblue;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+   }
+
+
+@media (max-width: 768px) {
+    img{
+        width:100% ;
+        height: auto;
+
+    }
+}
+
+.center2{
+    text-align: center;
+    color: rgb(233, 203, 71);
+}
+

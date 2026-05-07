@@ -1,0 +1,84 @@
+<!--John Lord 5/7/26-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take the poll </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header> 
+            Egypt Poll
+        </header>
+
+        <nav> 
+            <ul>
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="luxor.html">Luxor</a> </li>  
+                <li> <a href="cruise.html">Cruise</a></li>
+                <li> <a href="cario.html">Cairo</a></li>
+                <li> <a href="sakkar.html">Sakkar</a> </li>
+                <li> <a href="form.html">Survey</a></li>
+                <li> <a href="credits.html">Credits</a></li>
+            </ul>
+        </nav>
+        <main>
+        <h3 class="center2">Please fill out this form!</h3>
+
+        <div class="container">
+        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" required>
+
+ <!-- Enter a field for the Last Name (see above for an example)-->
+
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="">--Select--</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+                <option value="ukraine">Ukraine</option>
+                <option value="mexico">Mexico</option>
+                <option value="switzerland">Switzerland</option>
+                <option value="japan">Japan</option>
+            </select>
+  <!-- RADIO GROUP -->
+  <fieldset class="radio-group">
+    <legend>Where would you like to go in Egypt?</legend>
+
+    <label>
+      <input type="checkbox" name="(1)Go To" value="luxor">
+      Luxor
+    </label>
+
+    <label>
+        <input type="checkbox" name="(2)Go To" value="nile">
+     The Nile (Cruise).
+    </label>
+
+    <label>
+        <input type="checkbox" name="(3)Go To" value="cairo">
+      Cairo
+    </label>
+
+    <label>
+        <input type="checkbox" name="(4)Go To" value="sakkar">
+    Sakkar and the Step pyramid
+    </label>
+
+  </fieldset>
+
+  <input type="submit" value="Submit">
+
+        </form>
+
+    </div>
+</main>
+
+</body>
+</html>
